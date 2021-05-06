@@ -1,0 +1,49 @@
+.login {
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 5px;
+  margin: 2rem auto 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ffad6f;
+
+  &:hover {
+    background-color: #fa8124;
+  }
+}
+
+.caption {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.form {
+  background-color: #fff;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 5px;
+  height: 18rem;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  color: gray;
+}
+
+.input {
+  border: 1px solid rgb(214, 214, 214);
+  width: 100%;
+  border-radius: 3px;
+  height: 2.5rem;
+  padding-left: 0.3rem;
+  &:not(:last-child) {
+    margin: 0 0 1rem;
+  }
+}

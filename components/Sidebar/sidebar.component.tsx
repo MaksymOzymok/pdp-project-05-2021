@@ -9,7 +9,6 @@ const Sidebar = () => {
 
   const navItems = [
     { caption: "Клієнти", base: "/" },
-    { caption: "Продукти", base: "/products" },
     { caption: "Замовлення", base: "/orders" },
   ];
 
@@ -24,7 +23,7 @@ const Sidebar = () => {
           <li
             key={caption}
             className={clsx(styles.navItem, {
-              [styles.navItemActive]: router.pathname == base,
+              [styles.navItemActive]: router.pathname.includes(base),
             })}
           >
             <Link href={base}>
