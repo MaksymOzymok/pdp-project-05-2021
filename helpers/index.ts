@@ -1,14 +1,16 @@
-import axiosClient from '../config/axios';
+import axiosClient from "../config/axios";
 
-// obtiene los datos del vendedor logueado
-export const getCurrentSeller = () => JSON.parse(localStorage.getItem('userData'));
+// Get current seller
+export const getCurrentSeller = () =>
+  JSON.parse(localStorage.getItem("userData"));
 
-// retorna una promesa con todos clientes dado el id del vendedor
+//Get all clients
 export const getClients = (sellerId) => {
-    return axiosClient.get(`/users?role=client&sellerId=${sellerId}`);
+  return axiosClient.get(`/users?role=client&sellerId=${sellerId}`);
 };
+
 export const statusOptions = [
-    { value: 'completed', label: 'Completado' },
-    { value: 'pending', label: 'Pendiente' },
-    { value: 'canceled', label: 'Cancelado' },
+  { value: "completed", label: "Відправлено" },
+  { value: "pending", label: "Очікується" },
+  { value: "canceled", label: "Скасовано" },
 ];
