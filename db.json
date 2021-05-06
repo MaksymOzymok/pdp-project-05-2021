@@ -1,5 +1,50 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "Maksym Ozymok",
+      "email": "ozymokMax1@gmail.com",
+      "password": "1234",
+      "role": "seller",
+      "clients": [
+        {
+          "id": "2"
+        }
+      ],
+      "numberSales": 1
+    },
+    {
+      "id": 2,
+      "name": "Oliver Twist",
+      "email": "oliver@twist.com",
+      "password": "1234",
+      "role": "seller",
+      "clients": [
+        {
+          "id": "4"
+        }
+      ],
+      "numberSales": 2
+    },
+    {
+      "id": 4,
+      "name": "Iryna Eri",
+      "email": "Iryna@gmail.com",
+      "password": "1234",
+      "company": "Tesla",
+      "role": "client",
+      "sellerId": 1
+    },
+    {
+      "id": 5,
+      "name": "Petro",
+      "email": "petro@gmail.com",
+      "password": "1234",
+      "company": "Dell",
+      "role": "client",
+      "sellerId": 2
+    }
+  ],
   "products": [],
   "orders": []
 }
