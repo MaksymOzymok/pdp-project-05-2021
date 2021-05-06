@@ -1,0 +1,21 @@
+.header {
+  text-align: center;
+  padding: 1.8rem 0;
+  color: rgb(243, 109, 47);
+
+  border-bottom: 1px solid rgba(211, 211, 211, 0.932);
+}
+
+.newClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  margin-left: 80%;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: rgb(243, 109, 47);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
