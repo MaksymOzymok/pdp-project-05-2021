@@ -7,11 +7,6 @@ import clsx from "clsx";
 const Sidebar = () => {
   const router = useRouter();
 
-  const navItems = [
-    { caption: "Клієнти", base: "/" },
-    { caption: "Замовлення", base: "/orders" },
-  ];
-
   return (
     <aside className={styles.asside}>
       <div>
@@ -19,18 +14,29 @@ const Sidebar = () => {
       </div>
 
       <nav className={styles.nav}>
-        {navItems.map(({ caption, base }) => (
-          <li
-            key={caption}
-            className={clsx(styles.navItem, {
-              [styles.navItemActive]: router.pathname.includes(base),
-            })}
-          >
-            <Link href={base}>
-              <a>{caption}</a>
-            </Link>
-          </li>
-        ))}
+        <li
+          key={"/"}
+          className={clsx(styles.navItem, {
+            [styles.navItemActive]:
+              router.pathname == "/" ||
+              router.pathname.includes("/editclient") ||
+              router.pathname.includes("/newclient"),
+          })}
+        >
+          <Link href={"/"}>
+            <a>Клієнти</a>
+          </Link>
+        </li>
+        <li
+          key={"/orders"}
+          className={clsx(styles.navItem, {
+            [styles.navItemActive]: router.pathname == "/orders",
+          })}
+        >
+          <Link href={"/orders"}>
+            <a>Замовлення</a>
+          </Link>
+        </li>
       </nav>
     </aside>
   );

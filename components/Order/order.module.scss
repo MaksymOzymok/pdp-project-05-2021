@@ -1,0 +1,37 @@
+.order {
+  width: 20rem;
+  height: 25rem;
+  margin: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 216, 216);
+
+  -webkit-box-shadow: 1px 6px 15px -1px #797979;
+  box-shadow: 1px 6px 15px -1px #969696;
+}
+
+.green {
+  border: 2px solid green;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+.yellow {
+  border: 2px solid yellow;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.item {
+  margin: 0.5rem 0.2rem;
+  color: #969696;
+}
+
+.client,
+.amount {
+  margin: 1rem 0;
+  color: #969696;
+}
