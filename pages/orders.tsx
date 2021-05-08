@@ -15,7 +15,7 @@ export default function Orders() {
   return (
     <Layout>
       <h1 className={styles.header}>Замовлення</h1>
-      <Link href="/neworder">
+      <Link href="/new-order">
         <a className={styles.newOrder}>Нове замовлення</a>
       </Link>
       <div className={styles.orders}>
