@@ -30,7 +30,9 @@ const Sidebar = () => {
         <li
           key={"/orders"}
           className={clsx(styles.navItem, {
-            [styles.navItemActive]: router.pathname == "/orders",
+            [styles.navItemActive]:
+              router.pathname == "/orders" ||
+              router.pathname.includes("/new-order"),
           })}
         >
           <Link href={"/orders"}>

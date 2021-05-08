@@ -21,20 +21,30 @@ const Order = ({ data }) => {
       console.log(error);
     }
   };
-
+  const handleDelete = async (value) => {
+    try {
+      const response = await axiosClient.delete(`orders/${id}`);
+      window.location.reload();
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div
       className={clsx(
         styles.order,
-        { [styles.green]: orderStatus.value === "completed" },
-        { [styles.red]: orderStatus.value === "canceled" },
-        { [styles.yellow]: orderStatus.value === "pending" }
+        { [styles.green]: orderStatus?.value === "completed" },
+        { [styles.red]: orderStatus?.value === "canceled" },
+        { [styles.yellow]: orderStatus?.value === "pending" }
       )}
     >
+      <div className={styles.delete} onClick={handleDelete}>
+        Видалити
+      </div>
       <div className={styles.container}>
         <div className={styles.caption}>Продукти:</div>
         {products.map((product, index) => (
-          <div className={styles.item}>{product.name}</div>
+          <div className={styles.item}>{product?.name}</div>
         ))}
         <div className={styles.client}>
           Клієнт:
