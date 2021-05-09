@@ -1,0 +1,63 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.create,
+.back {
+  display: block;
+  height: 2.5rem;
+  width: 60%;
+  border-radius: 5px;
+  margin: 2rem auto 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ffad6f;
+
+  &:hover {
+    background-color: #fa8124;
+  }
+}
+
+.back {
+  background-color: rgb(202, 202, 202);
+  margin-top: 1rem;
+}
+
+.caption {
+  color: #fa8124;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.form {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.item {
+  margin: 1.5rem 0;
+}
+
+.input {
+  border: 1px solid rgb(214, 214, 214);
+  width: 100%;
+  border-radius: 3px;
+  height: 2.5rem;
+  padding-left: 0.3rem;
+  &:not(:last-child) {
+    margin: 0 0 1rem;
+  }
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  color: gray;
+}

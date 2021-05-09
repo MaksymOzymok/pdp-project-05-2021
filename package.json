@@ -8,18 +8,27 @@
     "start": "next start"
   },
   "dependencies": {
-    "sweetalert2": "^10.3.5",
-    "react": "16.13.1",
-    "uuid": "^8.3.1",
-    "react-redux": "^7.2.1",
     "axios": "^0.20.0",
-    "react-select": "^3.1.0",
-    "yup": "^0.29.3",
-    "react-dom": "16.13.1",
-    "react-thunk": "^1.0.0",
+    "bootstrap": "^5.0.0-beta3",
+    "classnames": "^2.3.1",
+    "clsx": "^1.1.1",
     "formik": "^2.1.7",
     "json-server": "^0.16.2",
     "next": "9.5.4",
-    "redux": "^4.0.5"
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.1",
+    "react-select": "^3.1.0",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.0.5",
+    "sass": "^1.32.12",
+    "sweetalert2": "^10.3.5",
+    "uuid": "^8.3.1",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
+    "typescript": "^4.2.4"
   }
 }
