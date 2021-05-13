@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL:
-    "https://my-json-server.typicode.com/MaksymOzymok/pdp-project-05-2021/db/",
+  baseURL: "https://infinite-bayou-91777.herokuapp.com/",
 });
 
 export default axiosClient;
