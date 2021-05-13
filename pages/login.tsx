@@ -15,7 +15,7 @@ export default function Home() {
     },
 
     onSubmit: async () => {
-      const { data } = await axiosClient.get("users");
+      const { data } = await axiosClient.get("/users");
       console.log(data);
       localStorage.setItem("isAuth", "true");
       const { email, name, id } = data[0];
